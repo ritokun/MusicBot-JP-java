@@ -49,7 +49,7 @@ public class NowplayingHandler
     
     public void init()
     {
-        bot.getThreadpool().scheduleWithFixedDelay(() -> updateAll(), 0, 5, TimeUnit.SECONDS);
+        bot.getThreadpool().scheduleWithFixedDelay(() -> updateAll(), 0, 0, TimeUnit.SECONDS);
     }
     
     public void setLastNPMessage(Message m)
