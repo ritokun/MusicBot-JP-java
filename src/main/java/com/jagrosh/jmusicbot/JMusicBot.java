@@ -26,11 +26,7 @@ import com.jagrosh.jmusicbot.entities.Prompt;
 import com.jagrosh.jmusicbot.gui.GUI;
 import com.jagrosh.jmusicbot.settings.SettingsManager;
 import com.jagrosh.jmusicbot.utils.OtherUtil;
-import dev.cosgy.JMusicBot.commands.general.AboutCommand;
-import dev.cosgy.JMusicBot.commands.general.PingCommand;
-import dev.cosgy.JMusicBot.commands.general.ServerInfo;
-import dev.cosgy.JMusicBot.commands.general.SettingsCmd;
-import dev.cosgy.JMusicBot.commands.general.UserInfo;
+import dev.cosgy.JMusicBot.commands.general.*;
 import dev.cosgy.JMusicBot.commands.listeners.CommandAudit;
 import dev.cosgy.JMusicBot.commands.music.MylistCmd;
 import dev.cosgy.JMusicBot.commands.music.NicoSearchCmd;
@@ -120,6 +116,7 @@ public class JMusicBot {
                         // General
                         new ServerInfo(),
                         new UserInfo(),
+                        new InviteCommand(),
                         // Music
                         new LyricsCmd(bot),
                         new NowplayingCmd(bot),
